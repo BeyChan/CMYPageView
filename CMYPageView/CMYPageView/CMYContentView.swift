@@ -70,7 +70,7 @@ extension CMYContentView {
     fileprivate func setupUI() {
         // 1.将childVc添加到父控制器中
         for vc in childVcs {
-            parentVc.addChildViewController(vc)
+            parentVc.addChild(vc)
         }
         
         // 2.添加UICollectionView

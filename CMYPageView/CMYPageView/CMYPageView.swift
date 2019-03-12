@@ -29,7 +29,12 @@ class CMYPageView: UIView {
         self.childVcs = childVCs
         self.parentVc = parentVc
         
-        parentVc.automaticallyAdjustsScrollViewInsets = false
+        if #available(iOS 11.0, *) {
+            
+        } else {
+            parentVc.automaticallyAdjustsScrollViewInsets = false
+        }
+        
         
         setupUI()
     }

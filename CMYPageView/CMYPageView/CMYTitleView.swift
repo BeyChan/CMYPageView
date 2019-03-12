@@ -134,7 +134,7 @@ extension CMYTitleView {
         
         for (index, label) in titleLabels.enumerated() {
             if style.isScrollEnable {
-                let rect = (label.text! as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [kCTFontAttributeName as NSAttributedStringKey: style.font], context: nil)
+                let rect = (label.text! as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0.0), options: .usesLineFragmentOrigin, attributes: [kCTFontAttributeName as NSAttributedString.Key: style.font], context: nil)
                 titleW = rect.width
                 if index == 0 {
                     titleX = style.titleMargin * 0.5
